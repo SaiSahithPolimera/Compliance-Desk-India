@@ -1,3 +1,6 @@
-import './styles.css'
+import {footer} from "./footer";
+import { whyChooseUs } from "./whyChooseUs";
+import "./styles.css";
 
-alert("Here i am");
+document.body.appendChild(whyChooseUs());
+document.body.appendChild(footer());
