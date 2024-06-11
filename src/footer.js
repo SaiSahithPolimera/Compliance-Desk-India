@@ -1,6 +1,7 @@
 const footer = () => {
   const footer = document.createElement("footer");
   footer.className = "footer";
+  footer.classList.add("footer-body")
 
   const footerTop = document.createElement("div");
   footerTop.className = "footer-top";
@@ -8,7 +9,7 @@ const footer = () => {
   const footerLogo = document.createElement("div");
   footerLogo.className = "footer-logo";
   const logoImg = document.createElement("img");
-  logoImg.src = "compliance-logo.png"; // Make sure this image is in the right directory
+  logoImg.src = "https://res.cloudinary.com/drlfc6gsb/image/upload/v1718091602/Screenshot_2024-06-11_130716_bp5qwf.png"; 
   logoImg.alt = "Compliance Desk India";
   footerLogo.appendChild(logoImg);
 
