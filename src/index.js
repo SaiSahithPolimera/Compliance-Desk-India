@@ -1,7 +1,6 @@
 import { footer } from "./footer";
 import { whyChooseUs } from "./whyChooseUs";
 import { services } from "./services";
-import { updates } from "./updates";
 import { contactUs } from "./contactUs";
 import "./styles.css";
 
