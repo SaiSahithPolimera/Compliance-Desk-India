@@ -390,8 +390,10 @@ hr {
 
 #popularContainer {
   display: flex;
-  padding: 12px;
+  align-items: center;
+  height: 70%;
   background-color: #fe472c;
+  font-weight: 550;
   justify-content: center;
 }
 
@@ -485,9 +487,9 @@ hr {
   #servicesContainer {
     display: flex;
     text-align: center;
-    padding: 25px;
+    padding: 50px;
     justify-content: center;
-    gap: 44px;
+    gap: 24px;
     align-items: center;
   }
 
@@ -502,7 +504,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
   }
   #plansContainer {
     display: flex;

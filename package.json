@@ -9,7 +9,7 @@
     "dev": "webpack serve",
     "build": "webpack",
     "deploy-init": "git add dist && git commit -m 'Initial dist subtree commit'",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": " "
   },
   "author": "Sai Sahith Polimera",
   "devDependencies": {
