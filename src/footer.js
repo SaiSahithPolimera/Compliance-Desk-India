@@ -62,6 +62,24 @@ const footer = () => {
       links: ["About Us", "Careers", "FAQs", "Teams", "Contact Us"],
     },
   ];
+  const Mandatory = document.createElement("div");
+  const img = document.createElement("img");
+  img.src = "https://res.cloudinary.com/drlfc6gsb/image/upload/v1718203975/Screenshot_2024-06-12_202132_bllhew.png";
+  img.alt = "tick";
+  Mandatory.appendChild(img);
+  Mandatory.classList.add("mandatory")
+  const facebook = document.createElement("i");
+  facebook.className = "fa-brands fa-facebook";
+  Mandatory.appendChild(facebook);
+  const twitter = document.createElement("i");
+  twitter.className = "fa-brands fa-twitter";
+  Mandatory.appendChild(twitter); 
+  const linkedin = document.createElement("i");
+  linkedin.className = "fa-brands fa-linkedin";
+  Mandatory.appendChild(linkedin);
+  const instagram = document.createElement("i");
+  instagram.className = "fa-brands fa-instagram";
+  Mandatory.appendChild(instagram);
 
   columns.forEach((column) => {
     const footerColumn = document.createElement("div");
@@ -91,9 +109,10 @@ const footer = () => {
         <p>Privacy Policy | Terms of Use | Legal</p>
         <p>© 2024 All Rights Reserved</p>
     `;
-
+    footerBottom.classList.add("footer-bottom")
+    Mandatory.appendChild(footerLinks);
   footer.appendChild(footerTop);
-  footer.appendChild(footerLinks);
+  footer.appendChild(Mandatory);
   footer.appendChild(footerBottom);
 
   document.body.appendChild(footer);
