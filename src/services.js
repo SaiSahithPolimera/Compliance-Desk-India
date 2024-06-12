@@ -1,6 +1,6 @@
 const services = () => {
-  const servicesContainer = document.createElement("div");
-  servicesContainer.id = "servicesContainer";
+  const servicesContainer = document.getElementById("pricing");
+  servicesContainer.id = "pricing";
   const headingContainer = document.createElement("div");
   const servicesList = document.createElement("div");
   servicesList.id = "servicesList";

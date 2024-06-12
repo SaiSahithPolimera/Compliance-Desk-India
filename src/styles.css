@@ -230,7 +230,7 @@ footer-body {
   }
 }
 
-#servicesContainer {
+#pricing {
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr 1fr 12fr;
@@ -239,7 +239,7 @@ footer-body {
   padding: 12px;
 }
 
-#servicesContainer h2 {
+#pricing h2 {
   font-size: 2rem;
   font-weight: 700;
   transform: scale(1.1);
@@ -419,7 +419,7 @@ hr {
   color: #323232;
 }
 @media (min-width: 375px) {
-  #servicesContainer {
+  #pricing {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -432,7 +432,7 @@ hr {
     font-size: 0.9rem;
   }
 
-  #servicesContainer h2 {
+  #pricing h2 {
     font-size: 1.4rem;
   }
   #servicesList {
@@ -459,7 +459,7 @@ hr {
 }
 
 @media (min-width: 768px) {
-  #servicesContainer {
+  #pricing {
     display: flex;
     flex-direction: column;
     gap: 44px;
@@ -484,7 +484,7 @@ hr {
 }
 
 @media (min-width: 1440px) {
-  #servicesContainer {
+  #pricing {
     display: flex;
     text-align: center;
     padding: 50px;
@@ -497,7 +497,7 @@ hr {
     font-size: 0.9rem;
   }
 
-  #servicesContainer h2 {
+  #pricing h2 {
     font-size: 1.8rem;
   }
   #servicesList {
@@ -518,4 +518,112 @@ hr {
     font-weight: 700;
     color: #323232;
   }
+}
+
+#contact-us {
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 15px;
+  padding: 25px;
+  grid-template-rows: 0.1fr 4fr;
+}
+
+#contact-us hgroup{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+hgroup h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+hgroup p {
+  color: #FE3314;
+}
+
+#mainContainer {
+  display: grid;
+  padding: 40px;
+  gap: 5px;
+  align-items: center;
+  grid-template-columns: 2fr 1.9fr;
+}
+
+#mainContainer #formContainer {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#formContainer form {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 40px;
+  gap: 32px;
+}
+
+#formContainer form div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#formContainer form label div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+}
+
+#formContainer form label {
+  display: flex;
+  flex-direction: column;
+}
+
+#formContainer form input {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  box-shadow: 1px 1px 14px 2px rgba(226, 226, 226, 0.686);
+  height: 55%;
+  border: 1.2px solid #a5aab2f3;
+}
+
+#formContainer form textarea {
+  resize: none;
+  height: 100%;
+  border: 1.2px solid #a5aab2f3;
+  padding: 12px;
+  box-shadow: 1px 1px 14px 2px rgba(226, 226, 226, 0.686);
+  border-radius: 5px;
+}
+
+#buttonContainer {
+  padding: 12px;
+}
+
+#buttonContainer button{
+  align-self: start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 40%;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #FE3314;
+  color: white;
+  font-weight: 600;
+  padding: 5px 8px;
+  border: none;
 }
