@@ -143,7 +143,7 @@ const services = () => {
     const serviceName = document.createElement("span");
     const hr = document.createElement("hr");
     serviceName.addEventListener("click", () => {
-      hr.style.display = "block";
+      hr.style.display = "flex";
       serviceName.style.color = "#fe472c";
       reset(serviceName, hr);
     });

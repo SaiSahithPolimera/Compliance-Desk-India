@@ -156,13 +156,13 @@ h6 {
   align-items: center;
   align-self: center;
 }
-.mandatory i{
-    margin-left: 40px;
-    margin-top: -20px;
-    height: 10px;
-    width: 40px;
-    transform: scale(2);
-    margin-bottom: 50px;
+.mandatory i {
+  margin-left: 40px;
+  margin-top: -20px;
+  height: 10px;
+  width: 40px;
+  transform: scale(2);
+  margin-bottom: 50px;
 }
 .feature h3 {
   margin-bottom: 10px;
@@ -173,14 +173,14 @@ h6 {
   color: #666;
 }
 .feature:hover {
-    transform: scale(1.05);
-    font-size: none;
-    cursor: pointer;
-    transition: 0.4s ease-out;
-  }
-.footer-bottom{
-    display: flex;
-    justify-content: space-between;
+  transform: scale(1.05);
+  font-size: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 @media (min-width: 600px) {
   .feature {
@@ -311,7 +311,6 @@ footer-body {
   justify-items: center;
   grid-template-rows: 1fr 1fr 12fr;
   justify-content: center;
-  gap: 24px;
   padding: 12px;
 }
 
@@ -328,6 +327,8 @@ hr {
   height: 3px;
   width: 50%;
   background-color: #fe472c;
+  margin-top: 4%;
+  margin-bottom: -4%;
 }
 
 #servicesList {
@@ -343,10 +344,8 @@ hr {
 
 #serviceContainer {
   display: flex;
-  padding: 4px;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 4px;
 }
 
 #planDetails div {
@@ -467,7 +466,7 @@ hr {
 #popularContainer {
   display: flex;
   align-items: center;
-  height: 70%;
+  height: 60%;
   background-color: #fe472c;
   font-weight: 550;
   justify-content: center;
@@ -494,6 +493,116 @@ hr {
   font-weight: 700;
   color: #323232;
 }
+
+#contact-us {
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 15px;
+  padding: 25px;
+  grid-template-rows: 0.1fr 4fr;
+}
+
+#contact-us hgroup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+hgroup h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+hgroup p {
+  color: #fe3314;
+}
+
+#mainContainer {
+  display: grid;
+  gap: 5px;
+  align-items: center;
+}
+
+#mainContainer #formContainer {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#formContainer form {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  border: 1px solid black;
+  width: 95%;
+  border-radius: 12px;
+  gap: 32px;
+}
+
+#formContainer form div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#formContainer form label div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+}
+
+#formContainer form label {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+#formContainer form input {
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 12px;
+  box-shadow: 1px 1px 14px 2px rgba(226, 226, 226, 0.686);
+  height: 55%;
+  border: 1.2px solid #a5aab2f3;
+}
+
+#formContainer form textarea {
+  resize: none;
+  height: 100%;
+  border: 1.2px solid #a5aab2f3;
+  padding: 12px;
+  box-shadow: 1px 1px 14px 2px rgba(226, 226, 226, 0.686);
+  border-radius: 5px;
+}
+
+#buttonContainer button {
+  align-self: start;
+  display: flex;
+  gap: 8px;
+  width: 40%;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #fe3314;
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  border: none;
+}
+
+#descriptionLabel span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 @media (min-width: 375px) {
   #pricing {
     display: flex;
@@ -532,6 +641,25 @@ hr {
     font-weight: 700;
     color: #323232;
   }
+  #mapContainer {
+    display: none;
+  }
+  #mainContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: none;
+  }
+  #formContainer {
+    width: 100%;
+    padding: 0px;
+  }
+  #formContainer form {
+    padding: 25px;
+  }
+  #buttonContainer button {
+    align-items: center;
+    width: 30%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -556,6 +684,23 @@ hr {
   }
   #card {
     width: fit-content;
+  }
+  #mapContainer {
+    display: none;
+  }
+  #mainContainer {
+    display: grid;
+    grid-template-columns: unset;
+    width: 100%;
+  }
+  #formContainer form {
+    padding: 35px;
+  }
+  #formContainer {
+    width: 100%;
+  }
+  #buttonContainer button {
+    width: 15%;
   }
 }
 
@@ -594,112 +739,274 @@ hr {
     font-weight: 700;
     color: #323232;
   }
+  #mainContainer {
+    grid-template-columns: 2fr 1.9fr;
+  }
+  #mapContainer {
+    display: block;
+  }
+  #formContainer form {
+    padding: 45px;
+  }
+  #buttonContainer button {
+    width: 25%;
+  }
 }
 
-#contact-us {
-  height: 100%;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  gap: 15px;
-  padding: 25px;
-  grid-template-rows: 0.1fr 4fr;
-}
-
-#contact-us hgroup{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 4px;
-}
-
-hgroup h2 {
-  font-size: 2.3rem;
-  font-weight: 700;
-}
-
-hgroup p {
-  color: #FE3314;
-}
-
-#mainContainer {
-  display: grid;
-  padding: 40px;
-  gap: 5px;
-  align-items: center;
-  grid-template-columns: 2fr 1.9fr;
-}
-
-#mainContainer #formContainer {
-  padding: 25px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+#suggestions {
+  position: relative;
+  display: inline-block;
+  background: url(./assets/map.gif);
   width: 100%;
 }
+#location {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
-#formContainer form {
+#suggestions {
+  position: relative;
+  background-color: white;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
-  font-size: 0.9rem;
-  border: 1px solid black;
-  border-radius: 12px;
-  padding: 40px;
-  gap: 32px;
+  overflow-x: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#formContainer form div {
-  display: flex;
+.suggestionBox {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.suggestionBox:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Testimonals-Section */
+
+#testimonals{
+  background-color:white;
+  padding:0px;
+  margin:0px;
+  height:100vh;
+  width:100vw;
+}
+
+#testimonals h1{
+  color:black;
+  font-weight:bold;
+  font-size:2.75rem;
+  font-family:arial,sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom:10px;
+}
+
+#testimonals h2{
+  color:orangered;
+  text-align: center;
+  font-size:1.5rem;
+  font-weight: 500;
+}
+
+.testimonial-container{
+  height:378px;
+  width: 1280px;
+  margin:auto; 
+  gap:48px;
+  display:flex;
   flex-direction: column;
-  gap: 14px;
 }
 
-#formContainer form label div {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 12px;
+.testimonial-content{
+  width:1243px;
+  height:290px;
+  padding:20px;
+  gap:10px;
+  color:rgba(255,255,255,1);
+  box-shadow:0px 6px 15px 2px rgba(9, 13, 21, 0.08);
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  animation-name:fade;
+  animation-duration:1.5s;
 }
 
-#formContainer form label {
-  display: flex;
-  flex-direction: column;
+@keyframes fade
+{
+  from{opacity: .5}
+  to{opacity : 1}
 }
 
-#formContainer form input {
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  padding: 12px;
-  box-shadow: 1px 1px 14px 2px rgba(226, 226, 226, 0.686);
-  height: 55%;
-  border: 1.2px solid #a5aab2f3;
+.quote-image{
+  width:47px;
+  height:47px;
 }
 
-#formContainer form textarea {
-  resize: none;
-  height: 100%;
-  border: 1.2px solid #a5aab2f3;
-  padding: 12px;
-  box-shadow: 1px 1px 14px 2px rgba(226, 226, 226, 0.686);
-  border-radius: 5px;
+.testimonial-data{
+  width:592px;
+  height:176px;
+  display:flex;
+  flex-direction:column;
 }
 
-#buttonContainer {
-  padding: 12px;
+.testimonial-experience{
+  font-size:1.7rem;
+  font-weight:bold;
+  color:black;
+  font-family:arial,sans-serif;
+  margin:0px 0px 5px 0px;
+  line-height:1.2;
 }
 
-#buttonContainer button{
-  align-self: start;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 40%;
-  justify-content: center;
-  border-radius: 5px;
-  background-color: #FE3314;
-  color: white;
-  font-weight: 600;
-  padding: 5px 8px;
-  border: none;
+.testimonial-info{
+  font-size:1rem;
+  color:black;
+  font-weight:light;
+  line-height:1.6;
+}
+
+.testimonial-image{
+  width:443px;
+  height:250px;
+  border-radius: 6px;
+}
+
+.testimonial-buttons-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: end;
+}
+
+.button-container{
+  width:96px;
+  height:40px;
+  gap:16px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  margin-left:100px;
+}
+
+.left-arrow-btn{
+  width:40px;
+  height:40px;
+  background-image:url('./assets/left-arrow.png');
+  border:none;
+}
+
+.left-arrow-btn:hover{
+  cursor:pointer;
+}
+
+.right-arrow-btn{
+  width:40px;
+  height:40px;
+  background-image:url('./assets/right-arrow.png');
+  border:none;
+}
+
+.right-arrow-btn:hover{
+  cursor:pointer;
+}
+
+
+/* Responsive Design */
+
+@media (max-width:900px) {
+
+  .testimonial-container{
+      height:737px;
+      width:632px;
+      gap:32px;
+  }
+
+  .testimonial-content {
+      width:625px;
+      height:665px;
+      padding:0px 20px 0px 20px;
+      gap:10px;
+      flex-direction: column;
+  }
+
+  .quote-image{
+      width:56.4px;
+      height:56.4px;
+  }
+
+  .testimonial-data {
+      width: 529px;
+      height: 176px;
+      gap:20px;
+  }
+
+  .testimonial-image {
+      width:592px;
+      height:333px;
+      gap:6px;
+  }
+}
+
+@media (max-width:600px) {
+  #testimonals h1 {
+      font-size: 1.75rem;
+  }
+
+  #testimonals h2 {
+      font-size: 1rem;
+  }
+
+  .testimonial-container{
+      height:524.1px;
+      width:343px;
+      gap:18px;
+  }
+
+  .testimonial-content {
+      width:343px;
+      height:500px;
+      padding:0px 20px 0px 20px;
+      gap:10px;
+      flex-direction: column;
+  }
+
+  .quote-image{
+      width:36.1px;
+      height:36.1px;
+  }
+
+  .testimonial-data {
+      width:323px;
+      height:196px;
+      gap:5px;
+  }
+
+  .testimonial-experience{
+      font-size:1.2rem;
+      line-height:normal;
+  }
+
+  .testimonial-image {
+      width:323px;
+      height:194px;
+      gap:6px;
+      background-size:cover;
+  }
+
+  .button-container{
+      width:57.6px;
+      height:24px;
+      gap:9.6px;
+  }
+
+  .left-arrow-btn, .right-arrow-btn {
+      width: 24px;
+      height: 24px;
+      background-size:cover;
+  }
 }
